@@ -1,0 +1,8 @@
+CREATE TABLE books (id INTEGER PRIMARY KEY, name TEXT, rating INTEGER, genre TEXT );
+
+INSERT INTO books VALUES (1, "The Theif Lord", 10, "Fantasy Fiction");
+INSERT INTO books VALUES (2, "Beautiful Creatures", 10, "Fantasy Fiction");
+INSERT INTO books VALUES (3, "Carrie", 6, "Horror");
+INSERT INTO books VALUES (4, "Holes", 7, "Mystery"); 
+INSERT INTO books VALUES (5, "Frindle", 8, "Fiction");
+SELECT * FROM books;
