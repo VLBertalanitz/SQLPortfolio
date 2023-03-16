@@ -1,0 +1,19 @@
+CREATE TABLE clothing_store (id INTEGER PRIMARY KEY, name TEXT, quantity INTEGER, material TEXT, color TEXT, price INTEGER);
+INSERT INTO clothing_store VALUES (1, "T-Shirt", 17, "Cotton", "Blue", 9.99);
+INSERT INTO clothing_store VALUES (2, "T-Shirt", 14, "Cotton", "White", 9.99);
+INSERT INTO clothing_store VALUES (3, "T-Shirt", 18, "Cotton", "Red", 9.99);
+INSERT INTO clothing_store VALUES (4, "Dress", 20, "Chiffon", "Pink", 24.99);
+INSERT INTO clothing_store VALUES (5, "Dress", 22, "Satin", "Blue", 29.99);
+INSERT INTO clothing_store VALUES (6, "Pants", 8, "Jeans", "Blue", 21.99);
+INSERT INTO clothing_store VALUES (7, "Pants", 10, "Cotton", "Grey", 14.99);
+INSERT INTO clothing_store VALUES (8, "Shorts", 9, "Faux Leather", "Black", 19.99);
+INSERT INTO clothing_store VALUES (9, "Jacket", 5, "Faux Fur", "White", 49.99);
+INSERT INTO clothing_store VALUES (10, "Jacket", 6, "Faux Leather", "Red", 39.99);
+INSERT INTO clothing_store VALUES (11, "Socks", 50, "Cotton", "White", 3.99);
+INSERT INTO clothing_store VALUES (12, "Trainers", 13, "Nylon Mesh", "Yellow", 31.99);
+INSERT INTO clothing_store VALUES (13, "Boots", 16, "Faux Leather", "Black", 35.99);
+INSERT INTO clothing_store VALUES (14, "High Heels", 4, "Faux Leather", "Silver", 29.99);
+INSERT INTO clothing_store VALUES (15, "Slippers", 28, "Sheepleather", "Pink", 14.99);
+SELECT * FROM clothing_store
+ORDER BY price DESC;
+SELECT material, SUM(quantity) FROM clothing_store GROUP BY material ORDER BY material ASC
